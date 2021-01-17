@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="SS.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+    <body>
+        <div class="open"> <h1>The Sept Girl</h1></div>
+        <div class="text"><h1>Really</h1></div>
+        <div class="text">
+           
+            <h1>I Miss You</h1>
+            
+        </div>
+        <div class="text"><h2>CHUKU</h2></div>
+        <div class="bo">
+        <button onclick="myFunction()" id="bot">Pls Click Me</button>
+    </div>
+    
+    </body>
+    <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+            // show hide paragraph on button click
+            $(".text").show("slow", function(){
+                // check paragraph once toggle effect is completed
+               /* if($(".text").is(":visible")){
+
+                } else{
+                    
+                }*/
+                $(".open").hide();
+                $(".bo").hide();
+            });
+        });
+    });
+        
+    </script>
+</html>
